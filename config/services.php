@@ -35,9 +35,9 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
     'github' => [
-      'client_id' => env('GITHUB_KEY'),
-      'client_secret' => env('GITHUB_SECRET'),
-      'redirect' => env('GITHUB_REDIRECT_URI'),
+      'client_id' => env('GITHUB_KEY','20f668078494ff8e4617'),
+      'client_secret' => env('GITHUB_SECRET','ea8a80be0a345fe880f30f81255b98e345f70436'),
+      'redirect' => env('GITHUB_REDIRECT_URI','http://www.phpzit.com/auth/github/callback'),
   ],
 
 

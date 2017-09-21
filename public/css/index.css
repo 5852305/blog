@@ -1,0 +1,22 @@
+/*tags*/
+.post-tag{
+    color: #999;
+}
+.container a{
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+.border-bottom{
+  border-bottom: 1px solid #eee;
+}
+.panel-body{
+  padding: 15px 0 5px 0;
+}
+.panel-content{
+    padding-top:8px;
+}
+
+.panel-body .thumbnail> img {
+  
+}

@@ -22,7 +22,7 @@
      <td><span class="glyphicon glyphicon-time"></span> {{ $category->created_at }}</td>
      <td><span class="glyphicon glyphicon-time"></span> {{ $category->updated_at }}</td>
      <td>
-         @if($category->user_id === Auth::user()->id  || Auth::user()->id == 1)
+         @if($category->user_id == Auth::id()  || Auth::id() == 1)
        <form action="{{ route('categorys.destroy',$category->id) }}" method="POST" class="form-inline">
          {{ csrf_field() }}
          {{ method_field('DELETE') }}

@@ -29,7 +29,7 @@
 
              <div class="form-group">
                <div class="col-sm-offset-2 col-sm-10">
-                 @if($tag->user_id === Auth::user()->id || Auth::user()->id == 1 )
+                 @if($tag->user_id === Auth::id() || Auth::id() == 1 )
                  {!! Form::submit('修改标签',['class'=>'btn btn-success form-control']) !!}
                     @endif
                  </div>

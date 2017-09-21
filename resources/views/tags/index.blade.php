@@ -19,7 +19,7 @@
      <td><span class="glyphicon glyphicon-time"></span> {{ $tag->created_at }}</td>
      <td><span class="glyphicon glyphicon-time"></span> {{ $tag->updated_at }}</td>
      <td>
-        @if($tag->user_id == Auth::user()->id || Auth::user()->id == 1)
+        @if($tag->user_id == Auth::id() || Auth::id() == 1)
        <form action="{{ route('tags.destroy',$tag->id) }}" method="POST" class="form-inline">
          {{ csrf_field() }}
          {{ method_field('DELETE') }}
